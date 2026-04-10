@@ -29,7 +29,12 @@ namespace Sistema_Estudiantil
 
         private void btnAlumnos_Click(object sender, EventArgs e)
         {
+            panelContenido.Controls.Clear();
 
+            Alumnoscontenedor uc = new Alumnoscontenedor();
+            uc.Dock = DockStyle.Fill;
+
+            panelContenido.Controls.Add(uc);
         }
 
         private void btnProfesor_Click(object sender, EventArgs e)

@@ -10,7 +10,7 @@ namespace Sistema_Estudiantil
     public static class ConexionDB
     {
         // Cadena de conexión a tu base de datos
-        public static string connectionString = "Server=DESKTOP-OLP7FUV;Database=SistemaEstudiantil;Trusted_Connection=True;";
+        public static string connectionString = "Server=DESKTOP-OLP7FUV\\SQLEXPRESS;Database=SistemaEstudiantil;Trusted_Connection=True;";
 
         // Método que devuelve la conexión lista para usar
         public static SqlConnection ObtenerConexion()
