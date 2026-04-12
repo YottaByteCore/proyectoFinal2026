@@ -269,5 +269,15 @@ namespace Sistema_Estudiantil.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2026_04_06_at_12_25_32_PM {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2026-04-06 at 12.25.32 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
