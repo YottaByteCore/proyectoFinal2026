@@ -59,6 +59,11 @@ namespace Sistema_Estudiantil
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
 
         }
     }
