@@ -10,3 +10,4 @@ C:\Users\pc\Desktop\Nucleo\Universidad\Periodo 3\PROGRAMACION DE APLICACIONES\Pr
 C:\Users\pc\Desktop\Nucleo\Universidad\Periodo 3\PROGRAMACION DE APLICACIONES\Proyectos\C Sharp\2026\Enero-Abril\Sistema Estudiantil\Sistema Estudiantil\Sistema Estudiantil\obj\Debug\Sistema Estudiantil.pdb
 C:\Users\pc\Desktop\Nucleo\Universidad\Periodo 3\PROGRAMACION DE APLICACIONES\Proyectos\C Sharp\2026\Enero-Abril\Sistema Estudiantil\Sistema Estudiantil\Sistema Estudiantil\obj\Debug\Sistema_Estudiantil.Alumnoscontenedor.resources
 C:\Users\pc\Desktop\Nucleo\Universidad\Periodo 3\PROGRAMACION DE APLICACIONES\Proyectos\C Sharp\2026\Enero-Abril\Sistema Estudiantil\Sistema Estudiantil\Sistema Estudiantil\obj\Debug\Sistema_Estudiantil.Login.resources
+C:\Users\pc\Desktop\Nucleo\Universidad\Periodo 3\PROGRAMACION DE APLICACIONES\Proyectos\C Sharp\2026\Enero-Abril\Sistema Estudiantil\Sistema Estudiantil\Sistema Estudiantil\obj\Debug\Sistema_Estudiantil.ContenedorProfesor.resources

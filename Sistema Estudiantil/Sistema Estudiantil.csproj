@@ -56,6 +56,12 @@
       <DependentUpon>Alumnoscontenedor.cs</DependentUpon>
     </Compile>
     <Compile Include="conexionDB.cs" />
+    <Compile Include="ContenedorProfesor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContenedorProfesor.Designer.cs">
+      <DependentUpon>ContenedorProfesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </Compile>
     <EmbeddedResource Include="Alumnoscontenedor.resx">
       <DependentUpon>Alumnoscontenedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContenedorProfesor.resx">
+      <DependentUpon>ContenedorProfesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

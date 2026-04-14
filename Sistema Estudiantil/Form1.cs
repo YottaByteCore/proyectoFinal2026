@@ -39,7 +39,16 @@ namespace Sistema_Estudiantil
 
         private void btnProfesor_Click(object sender, EventArgs e)
         {
+            panelContenido.Controls.Clear();
 
+            
+            ContenedorProfesor control = new ContenedorProfesor();
+
+            
+            control.Dock = DockStyle.Fill;
+
+            
+            panelContenido.Controls.Add(control);
         }
 
         private void btnMaterias_Click(object sender, EventArgs e)

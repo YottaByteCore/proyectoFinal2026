@@ -73,7 +73,7 @@
             // 
             // btnInicio
             // 
-            this.btnInicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(42)))), ((int)(((byte)(56)))));
+            this.btnInicio.BackColor = System.Drawing.Color.White;
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicio.Location = new System.Drawing.Point(163, 426);
             this.btnInicio.Name = "btnInicio";
