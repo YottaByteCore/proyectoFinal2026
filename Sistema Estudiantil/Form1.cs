@@ -58,12 +58,30 @@ namespace Sistema_Estudiantil
 
         private void btnHorarios_Click(object sender, EventArgs e)
         {
+            panelContenido.Controls.Clear();
 
+
+            HorarioContenedor control = new HorarioContenedor();
+
+
+            control.Dock = DockStyle.Fill;
+
+
+            panelContenido.Controls.Add(control);
         }
 
         private void btnNota_Click(object sender, EventArgs e)
         {
+            panelContenido.Controls.Clear();
 
+
+            NotaContenedor control = new NotaContenedor();
+
+
+            control.Dock = DockStyle.Fill;
+
+
+            panelContenido.Controls.Add(control);
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
