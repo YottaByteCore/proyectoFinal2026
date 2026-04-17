@@ -128,11 +128,27 @@ namespace Sistema_Estudiantil
                 {
                     conn.Open();
 
-                    string query = "DELETE FROM Alumnos WHERE ID_Alumno=@Id";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@Id", id);
+                    // BORRAR NOTAS
+                    string queryNotas = @"DELETE FROM Notas 
+                                 WHERE ID_Inscripcion IN 
+                                 (SELECT ID_Inscripcion FROM Inscripciones WHERE ID_Alumno=@Id)";
+                    SqlCommand cmdNotas = new SqlCommand(queryNotas, conn);
+                    cmdNotas.Parameters.AddWithValue("@Id", id);
+                    cmdNotas.ExecuteNonQuery();
 
-                    cmd.ExecuteNonQuery();
+                    // BORRAR INSCRIPCIONES
+                    string queryInscripciones = "DELETE FROM Inscripciones WHERE ID_Alumno=@Id";
+                    SqlCommand cmdIns = new SqlCommand(queryInscripciones, conn);
+                    cmdIns.Parameters.AddWithValue("@Id", id);
+                    cmdIns.ExecuteNonQuery();
+
+                    //  BORRAR ALUMNO
+                    string queryAlumno = "DELETE FROM Alumnos WHERE ID_Alumno=@Id";
+                    SqlCommand cmdAlumno = new SqlCommand(queryAlumno, conn);
+                    cmdAlumno.Parameters.AddWithValue("@Id", id);
+                    cmdAlumno.ExecuteNonQuery();
+
+                    conn.Close();
                 }
 
                 MessageBox.Show("Alumno eliminado");

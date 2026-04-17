@@ -53,7 +53,16 @@ namespace Sistema_Estudiantil
 
         private void btnMaterias_Click(object sender, EventArgs e)
         {
+            panelContenido.Controls.Clear();
 
+
+            MateriaContenedor control = new MateriaContenedor();
+
+
+            control.Dock = DockStyle.Fill;
+
+
+            panelContenido.Controls.Add(control);
         }
 
         private void btnHorarios_Click(object sender, EventArgs e)

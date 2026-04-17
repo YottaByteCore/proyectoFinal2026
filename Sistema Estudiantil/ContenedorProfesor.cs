@@ -123,12 +123,21 @@ namespace Sistema_Estudiantil
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@ID", id);
 
-                    con.Open();
-                    cmd.ExecuteNonQuery();
-                    con.Close();
-                }
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
 
-                CargarProfesores();
+                        MessageBox.Show("Profesor eliminado");
+
+                        CargarProfesores();
+                    }
+                    catch (SqlException)
+                    {
+                        MessageBox.Show("No puedes eliminar este profesor porque tiene materias asignadas. Elimina primero las materias.");
+                    }
+                }
 
                 Nombre2.Clear();
                 Apellido2.Clear();
